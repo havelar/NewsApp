@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 from flask_cors import CORS
 
-from appLink.routes.linkRoute import linksBP
+from routes.linkRoute import linksBP
 
 app = Flask(__name__)
 CORS(
