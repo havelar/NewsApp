@@ -1,7 +1,7 @@
 from flask import Blueprint, request, jsonify, make_response
 from pymongo.collection import ObjectId
 
-from appLink.helper.MongoDAO import articleDB
+from helper.MongoDAO import articleDB
 
 linksBP = Blueprint('links', __name__, url_prefix='/')
 
