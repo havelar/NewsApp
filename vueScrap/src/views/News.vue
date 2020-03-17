@@ -58,7 +58,7 @@ export default {
       data.append('status', status)
 
       if (this.id_ !== '') {
-        await fetch('http://192.168.100.142:8000/avaliate_links', {
+        await fetch('http://localhost:8000/avaliate_links', {
           method: 'POST',
           body: data
         })
@@ -76,8 +76,8 @@ export default {
       }
     },
     async LoadLink () {
-      let response = await fetch('http://192.168.100.142:8000/get_links')
-      let resp = await fetch('http://192.168.100.142:8000/get_info')
+      let response = await fetch('http://localhost:8000/get_links')
+      let resp = await fetch('http://localhost:8000/get_info')
 
       if (response.status === 200) {
         response = await response.json()
